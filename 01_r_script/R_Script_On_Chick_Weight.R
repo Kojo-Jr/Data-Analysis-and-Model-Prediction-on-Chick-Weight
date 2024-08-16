@@ -93,4 +93,4 @@ importance_df <- data.frame(feature = names(importance), importance = importance
 importance_df <- importance_df[order(-importance_df$importance),]
 print(importance_df)
 
-# write.csv(df, file = "dataset on chicks.csv")
+write.csv(df, file = "dataset on chicks.csv", row.names = FALSE)
